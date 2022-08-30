@@ -6,14 +6,14 @@ interface CharacteristicProps {
 }
 
 export default function Characteristic({ icon, text }: CharacteristicProps) {
-  const isModile = useBreakpointValue({
+  const isMobile = useBreakpointValue({
     base: false,
     sm: true,
   });
 
   return (
     <Flex direction={["row", "column"]} align="center" justify="center">
-      {isModile ? <Image src={`/icons/${icon}.svg`} alt='Caracteristicas' w="85px" h="85px" mb="6"/>
+      {isMobile ? <Image src={`/icons/${icon}.svg`} alt='Caracteristicas' w="85px" h="85px" mb="6"/>
         : <Text color="yellow.400" fontSize="4xl" mr="2">
           •
         </Text>}
