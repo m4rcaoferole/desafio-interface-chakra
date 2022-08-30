@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Characteristics from "../components/Characteristics";
 import Divider from "../components/Divider";
 import Header from "../components/Header";
+import Slider from "../components/Slider";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
           <br />
           Então escolha seu continente
         </Heading>
+
+        <Slider />
       </Flex>
     </div>
   );
