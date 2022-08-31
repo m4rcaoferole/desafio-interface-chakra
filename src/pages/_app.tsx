@@ -4,7 +4,10 @@ import { theme } from "../styles/theme";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/scss/pagination';
 import 'swiper/css/scrollbar';
+
+import '../styles/slider.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

@@ -4,8 +4,6 @@ import Link from "next/link";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// SwiperCore.use([ Navigation, Pagination, Scrollbar, A11y ])
-
 export default function Slider() {
   return (
     <Flex
@@ -16,9 +14,9 @@ export default function Slider() {
       h={["250px", "450px"]}
     >
       <Swiper
-        slidesPerView={1}
-        pagination={{ dynamicBullets: true }}
+        pagination={true}
         navigation
+        modules={[Pagination]}
         autoplay={{
           delay: 3000,
         }}
