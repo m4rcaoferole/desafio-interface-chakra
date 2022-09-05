@@ -1,4 +1,4 @@
-import { Grid, Heading } from "@chakra-ui/layout";
+import { Grid, Heading } from "@chakra-ui/react";
 import City from "./City";
 
 export default function Cities() {
@@ -12,6 +12,12 @@ export default function Cities() {
         justifyContent="center"
         px={["30px","0"]}
       >
+        <City />
+        <City />
+        <City />
+        <City />
+        <City />
+        <City />
         <City />
       </Grid>
     </div>
